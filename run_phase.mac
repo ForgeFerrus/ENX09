@@ -1,0 +1,16 @@
+# Minimal macro to run ENX09C
+#/control/verbose 1
+#/run/verbose 1
+#/event/verbose 0
+#/tracking/verbose 0
+
+# Ensure histogram config (optional)
+#/enx/bins/binWidth 0.01 MeV
+#/enx/bins/maxEnergy 10 MeV
+
+# Optionally set a fixed gamma energy
+#/enx/gun/energy 8 MeV
+
+# Initialize run and execute events
+/run/initialize
+/run/beamOn 1000
